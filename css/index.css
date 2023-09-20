@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap");
+body {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+body header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #111111;
+  padding: 0.5rem 0 0.5rem 0;
+}
+body header img {
+  width: 5rem;
+  margin-left: 4rem;
+}
+body header .menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4rem;
+}
+body header .menu .lista-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+body header .menu .lista-menu .item-menu {
+  list-style: none;
+  margin-left: 2rem;
+}
+body header .menu .lista-menu .item-menu :hover {
+  color: #5e5e5e;
+}
+body header .menu .lista-menu .item-menu a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+body header .menu .lista-menu .item-menu a :hover {
+  color: #333333;
+}
+body .destaques {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+body .destaques .divisoria {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+body .destaques .divisoria hr {
+  border-top: 0.1px solid #EEEEEE;
+  width: 25rem;
+}
+body .destaques .divisoria .divisoria__texto {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #757575;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  word-spacing: 5px;
+  color: #757575;
+  width: 15rem;
+  text-align: center;
+}
+body .destaques .cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+}
+body .destaques .cards .card {
+  width: 20rem;
+  height: 15rem;
+  background: #FFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+/*# sourceMappingURL=index.css.map */
