@@ -2,7 +2,7 @@
 
 @mixin texto-destaque ($tamanho, $cor)   {
     font-size: $tamanho;
-    font-weight: 700;
+    font-weight: 800;
     color: $cor;
     font-family: $fonte-principal;
 }
