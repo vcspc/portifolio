@@ -18,6 +18,8 @@ body {
         background-color: $cor-principal;
         padding: 0.5rem 0 0.5rem 0;
 
+        
+
         img {
             width: 5rem;
             margin-left: 4rem;
@@ -59,6 +61,18 @@ body {
 
             }
         }
+    }
+
+    .transicao {
+        transition-property: opacity;
+        transition-timing-function: ease-in-out;
+        transition-duration: 1s;
+        opacity: 0;
+
+    }
+
+    .transicao.ativo {
+        opacity: 1;
     }
 
     .destaques {

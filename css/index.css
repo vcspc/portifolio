@@ -51,6 +51,15 @@ body header .menu .lista-menu .item-menu a {
 body header .menu .lista-menu .item-menu a :hover {
   color: #333333;
 }
+body .transicao {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+  opacity: 0;
+}
+body .transicao.ativo {
+  opacity: 1;
+}
 body .destaques {
   display: flex;
   flex-direction: column;
