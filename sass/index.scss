@@ -64,15 +64,20 @@ body {
     }
 
     .transicao {
-        transition-property: opacity;
-        transition-timing-function: ease-in-out;
-        transition-duration: 1s;
+        //transition-property: opacity;
+        //transition-timing-function: ease-in-out;
+        //transition-duration: 2s;
         opacity: 0;
+	position: relative;
+	top: -50px;
+	transition: top 1s ease-in-out, opacity 1s ease-in-out;
 
     }
 
     .transicao.ativo {
         opacity: 1;
+	top: 0px;
+
     }
 
     .destaques {
