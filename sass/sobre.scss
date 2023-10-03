@@ -128,6 +128,26 @@ body {
                     @include texto-normal ($fonte-pequena, $cor-texto);
                     line-height: 25px;
                 }
+
+                
+            
+            }
+
+            .transicao-esquerda {
+                //transition-property: opacity;
+                //transition-timing-function: ease-in-out;
+                //transition-duration: 2s;
+                opacity: 0;
+                position: relative;
+                left: -50px;
+                transition: left 1s ease-in-out, opacity 1s ease-in-out;
+        
+            }
+        
+            .transicao-esquerda.ativo-esquerda {
+                opacity: 1;
+                left: 0px;
+        
             }
         
 
@@ -139,6 +159,24 @@ body {
                     width: 100%;
                 }
             }
+
+            .transicao-direita {
+                //transition-property: opacity;
+                //transition-timing-function: ease-in-out;
+                //transition-duration: 2s;
+                opacity: 0;
+                position: relative;
+                right: -50px;
+                transition: right 1s ease-in-out, opacity 1s ease-in-out;
+        
+            }
+        
+            .transicao-direita.ativo-direita {
+                opacity: 1;
+                right: 0px;
+        
+            }
+
         }
 
         .sobre-vinicius {
@@ -255,11 +293,12 @@ body {
                 }
             }
 
-            .servicos__img {
+            .servios__img {
                 width: 45%;
 
                 img {
                     width: 100%;
+                    
                 }
             }
         }
