@@ -29,7 +29,7 @@ body {
             align-items: center;
             justify-content: center;
             margin-right: 4rem;
-            
+
             .lista-menu {
                 display: flex;
                 flex-direction: row;
@@ -44,22 +44,22 @@ body {
 
                 }
 
-               
-                
+
+
                 .item-menu {
                     list-style: none;
                     margin-left: 2rem;
 
-                   
+
 
                     :hover {
                         color: $cor-hover;
                     }
-                    
+
 
                     a {
                         text-decoration: none;
-                        @include texto-normal ($fonte-pequena, $cor-secundaria); 
+                        @include texto-normal ($fonte-pequena, $cor-secundaria);
 
                         :hover {
                             color: $cor-texto;
@@ -72,6 +72,8 @@ body {
             }
         }
     }
+
+    @include transicao (top, -50px);
 
     .apresentacao {
         display: flex;
@@ -158,14 +160,14 @@ body {
             justify-content: space-between;
             width: 85%;
             margin: 1rem 0 3rem 0;
-            
+
 
             .card {
                 @include card (20rem);
 
                 .card-img {
                     width: 100%;
-                     
+
                 }
 
                 .card-titulo {
@@ -179,7 +181,7 @@ body {
                     line-height: 1rem;
                 }
 
-           
+
 
             }
 

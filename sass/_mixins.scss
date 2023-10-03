@@ -20,5 +20,49 @@
     background: #FFF;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 
-   
+
+}
+
+@mixin transicao ($direcao, $deslocamento) {
+    .transicao {
+        //transition-property: opacity;
+        //transition-timing-function: ease-in-out;
+        //transition-duration: 2s;
+        opacity: 0;
+	    position: relative;
+        @if $direcao == 'left' {
+            left: $deslocamento;
+        }
+        @if $direcao == 'right' {
+            right: $deslocamento;
+        }
+        @if $direcao == 'top' {
+            top: $deslocamento;
+        }
+        @if $direcao == 'bottom' {
+            bottom: $deslocamento;
+        }
+	    //top: -50px;
+	    transition: top 1s ease-in-out, opacity 1s ease-in-out;
+
+    }
+
+    .transicao.ativo {
+        opacity: 1;
+        //top: 0px;
+        @if $direcao == 'left' {
+            left: $deslocamento;
+        }
+        @if $direcao == 'right' {
+            right: $deslocamento;
+        }
+        @if $direcao == 'top' {
+            top: $deslocamento;
+        }
+        @if $direcao == 'bottom' {
+            bottom: $deslocamento;
+        }
+
+    }
+
 }
