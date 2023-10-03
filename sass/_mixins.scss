@@ -23,7 +23,7 @@
 
 }
 
-@mixin transicao ($direcao, $deslocamento) {
+/* @mixin transicao ($direcao, $deslocamento) {
     .transicao {
         //transition-property: opacity;
         //transition-timing-function: ease-in-out;
@@ -43,7 +43,7 @@
             bottom: $deslocamento;
         }
 	    //top: -50px;
-	    transition: top 1s ease-in-out, opacity 1s ease-in-out;
+	    transition: $direcao 1s ease-in-out, opacity 1s ease-in-out;
 
     }
 
@@ -65,4 +65,4 @@
 
     }
 
-}
+} */
