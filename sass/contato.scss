@@ -174,6 +174,67 @@ body {
             }
         }
     }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+
+            .titulo {
+                @include texto-normal ($fonte-grande, $cor-principal);
+                margin: 0 0 1.5rem 0;
+            }
+
+            label {
+                @include texto-normal ($fonte-pequena + 0.2rem, $cor-principal);
+                margin: 0rem 0 1rem 0;
+                
+            }
+
+            .mensagem {
+                margin-top: 4rem;
+            }
+
+            input {
+                width: 100%;
+                height: 2.5rem;
+                border-radius: 5px;
+                border-width: thin;
+                margin: 0 0 1rem 0;
+                border-color: $cor-input;
+                font-size: $fonte-pequena;
+                font-family: $fonte-principal;
+                color: $cor-input-texto;
+                padding: 0 0.8rem 0 0.8rem;
+
+            }
+
+            textarea {
+                width: 100%;
+                height: 9rem;
+                border-radius: 5px;
+                border-width: thin;
+                margin: 0 0 1rem 0;
+                border-color: $cor-input;
+                font-size: $fonte-pequena;
+                font-family: $fonte-principal;
+                color: $cor-input-texto;
+                padding: 0 0.8rem 0 0.8rem;
+            }
+
+            buttom {
+                margin-top: 1rem;
+            }
+        }
+    }
+
     footer {
         display: flex;
         flex-direction: row;
