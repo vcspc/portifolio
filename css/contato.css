@@ -206,8 +206,19 @@ body {
         font-family: "Plus Jakarta Sans", sans-serif;
         color: #5e5e5e;
         padding: 0 0.8rem 0 0.8rem; }
-      body form div buttom {
-        margin-top: 1rem; }
+  body .container {
+    display: flex;
+    width: 95%;
+    justify-content: flex-end; }
+    body .container button {
+      width: 9rem;
+      height: 3rem;
+      color: #ffffff;
+      background-color: #333333;
+      font-size: 1rem;
+      border-radius: 5px;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-weight: 600; }
   body footer {
     display: flex;
     flex-direction: row;

@@ -228,12 +228,28 @@ body {
                 color: $cor-input-texto;
                 padding: 0 0.8rem 0 0.8rem;
             }
-
-            buttom {
-                margin-top: 1rem;
-            }
         }
     }
+
+    .container {
+        display: flex;
+        width: 95%;
+        justify-content: flex-end;
+
+        button {
+            width: 9rem;
+            height: 3rem;
+            color: $cor-secundaria;
+            background-color: $cor-butao;
+            font-size: $fonte-pequena;
+            border-radius: 5px;
+            font-family: $fonte-principal;
+            font-weight: 600;
+        }
+
+    }
+
+   
 
     footer {
         display: flex;
